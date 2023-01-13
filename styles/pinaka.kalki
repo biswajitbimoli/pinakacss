@@ -1,5 +1,4 @@
-@kalki
-@global
+@kalki_global
 
 colors = ['red', 'green', 'blue', 'purple', 'orange', 'black']
 text_size = {
@@ -42,27 +41,27 @@ margin_size = {
 
 for color in colors:
     @css
-    .bg-{color} {{
-      background-color: {color};
-    }}
+    .bg-{{color}} {
+      background-color: {{color}};
+    }
     @endcss
 
 # Text color 
 
 for color in colors:
     @css
-    .t-{color} {{
-      color: {color};
-    }}
+    .t-{{color}} {
+      color: {{color}};
+    }
     @endcss
 
 # text Sizes
 
 for i in text_size:
     @css 
-    .text-{i} {{
+    .text-{{i}} {
       font-size: {text_size[i]}%;
-    }}
+    }
     @endcss
 
 @endkalki
@@ -83,34 +82,34 @@ for i in text_size:
 
 for i in margin_size:
   @css 
-  .m-{i} {{
+  .m-{{i}} {
     margin: {margin_size[i]}em;
-  }}
+  }
   @endcss
 
 for i in margin_size:
   @css    
-  .mt-{i} {{
+  .mt-{{i}} {
     margin-top: {margin_size[i]}em;
-  }}
+  }
   @endcss
 for i in margin_size:
   @css 
-  .ml-{i} {{
+  .ml-{{i}} {
     margin-left: {margin_size[i]}em;
-  }}
+  }
   @endcss
 for i in margin_size:
   @css 
-  .mb-{i} {{
+  .mb-{{i}} {
     margin-bottom: {margin_size[i]}em;
-  }}
+  }
   @endcss
 for i in margin_size:
   @css 
-  .mr-{i} {{
+  .mr-{{i}} {
     margin-right: {margin_size[i]}em;
-  }}
+  }
   @endcss
 @endkalki
 .m-auto {
